@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Berita IT</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5eee5;
+            color: #4e342e;
+        }
+
+        header, footer {
+            background: #5d4037;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        main {
+            padding: 25px;
+        }
+
+        h2 {
+            color: #795548;
+        }
+
+        /* Card UI */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fffaf4;
+            padding: 20px;
+            border: 1px solid #bcaaa4;
+            border-radius: 10px;
+            flex: 1 1 250px;
+            box-shadow: 0 3px 8px #00000015;
+            transition: 0.3s;
+        }
+
+        .card h3 {
+            color: #795548;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px #00000025;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 600px) {
+            main {
+                padding: 15px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Universitas Yudharta Pasuruan</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#java">Materi Java</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Beranda -->
+    <article id="home">
+        <h2>Selamat Datang di Portal Berita IT</h2>
+        <p>
+            Temukan berita terbaru seputar teknologi informasi
+            dan inovasi digital di sini.
+        </p>
+    </article>
+
+    <!-- Berita Terkini -->
+    <section id="berita">
+        <h2>Berita Terkini</h2>
+
+        <article class="card">
+            <h3>Tata Cara Memasak Nasi</h3>
+            <ol>
+                <li>Pilih beras.</li>
+                <li>Cuci beras hingga bersih.</li>
+                <li>Tambahkan air secukupnya.</li>
+                <li>Masak beras hingga matang.</li>
+            </ol>
+        </article>
+    </section>
+
+    <!-- Materi Dasar Java -->
+    <section id="java">
+        <h2>Materi Dasar Java</h2>
+        <p>
+            Pelajari dasar bahasa pemrograman Java berikut ini.
+        </p>
+
+        <div class="container">
+
+            <!-- Card 1 -->
+            <article class="card">
+                <h3>1. Definisi Java</h3>
+                <p>
+                    Java adalah bahasa pemrograman berbasis objek
+                    (OOP) yang dapat dijalankan di berbagai sistem
+                    operasi atau cross-platform.
+                </p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <h3>2. Prinsip Java</h3>
+                <p>
+                    Java memiliki prinsip Write Once, Run Anywhere
+                    (WORA), yaitu kode ditulis sekali dan dapat
+                    dijalankan di berbagai sistem dengan bantuan JVM.
+                </p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <h3>3. Ciri Khas Java</h3>
+                <p>
+                    Java menggunakan class, memiliki fitur keamanan,
+                    dan mengelola memori secara otomatis melalui
+                    Garbage Collection.
+                </p>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+                <h3>4. Penggunaan Java</h3>
+                <p>
+                    Java digunakan untuk membuat aplikasi Android,
+                    sistem backend perbankan, e-commerce,
+                    aplikasi web, dan desktop.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Portal Berita IT</p>
+    <p>Universitas Yudharta Pasuruan | Teknik Informatika</p>
+</footer>
+
+</body>
+</html>
