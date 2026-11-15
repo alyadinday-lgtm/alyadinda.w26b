@@ -1,7 +1,5 @@
-import { createApp } from "vue"
-import { createPinia } from "pinia"
-import App from "./App.vue"
-import router from "./router"
-import "./style.css"
+import { createApp } from 'vue'
+import './style.css'
+import BukuCatatan from './components/BukuCatatan.vue'
 
-createApp(App).use(createPinia()).use(router).mount("#app")
+createApp(BukuCatatan).mount('#app')
